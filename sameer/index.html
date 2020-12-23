@@ -1,0 +1,27 @@
+<html>
+    <body onload="myFunction()" >
+    <header style="background-color: indianred; text-align: center; ">Group Identification</header>
+    <dialog id="myDialog" > 
+        <form>  
+            <label>Enter User name</label><br>  
+            <input type="text" name="Username"><br> 
+        </form> 
+        <button id="btnclose">Ok</button>
+    </dialog>
+
+<script>
+    var dialog = document.getElementById('myDialog')
+    function myFunction(){
+        dialog.show();
+    }
+
+    (function(){
+        document.getElementById('btnclose').onclick = function (){
+            dialog.close();
+        }
+    })();
+
+</script>
+
+</body>
+</html>
